@@ -83,6 +83,18 @@ var ComponentB = {
 }
 ```
 
+### 遇到个问题 vscode 设置好了末尾增加空行,但是format 自动清理空行
 
+需要检查vscode的设置
+
+```javascript
+"files.insertFinalNewline": true,
+```
+
+还需要检查F1 - formatter config
+
+```javascript
+"files.insertFinalNewline": true,
+```
 
 
