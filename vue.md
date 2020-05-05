@@ -97,4 +97,12 @@ var ComponentB = {
 "files.insertFinalNewline": true,
 ```
 
+### '$' is not defined
+
+[https://blog.csdn.net/weixin_43945983/article/details/88294052](https://blog.csdn.net/weixin_43945983/article/details/88294052)
+
+### 没有白屏的刷新页面方法
+
+[https://blog.csdn.net/qi_dabin/article/details/81079632?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2](https://blog.csdn.net/qi_dabin/article/details/81079632?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2)
+
 
