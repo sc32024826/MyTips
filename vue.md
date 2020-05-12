@@ -40,6 +40,10 @@ module.exportes = {
 }
 ```
 
+还需要注意根目录下的editconfig文件内容是否与设置冲突
+
+修改rule 规则之后 需要重启 npm run dev
+
 #### 运行报错Parsing error: The keyword 'import' is reserved
 
 在`.eslintrc.js`中添加
@@ -97,12 +101,23 @@ var ComponentB = {
 "files.insertFinalNewline": true,
 ```
 
-### '$' is not defined
+### Vue packages version mismatch:
 
-[https://blog.csdn.net/weixin_43945983/article/details/88294052](https://blog.csdn.net/weixin_43945983/article/details/88294052)
+需要把不匹配的包的版本号弄成一致,而不是更新包就可以,或者把两个包都更新到最新,且版本号一致
 
-### 没有白屏的刷新页面方法
+### 报错:
 
-[https://blog.csdn.net/qi_dabin/article/details/81079632?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2](https://blog.csdn.net/qi_dabin/article/details/81079632?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2)
+### versionRequirement: packageConfig.engines.node
 
+### TypeError: Cannot read property 'node' of undefine
 
+原因是```package.json```中缺少了生命引擎版本的配置
+
+添加:
+
+```js
+"engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+```
