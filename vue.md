@@ -121,3 +121,35 @@ var ComponentB = {
     "npm": ">= 3.0.0"
   }
 ```
+
+### 禁用console.log()的几种方法
+
+> 1.```uglifyjs-webpack-plugin```
+> 
+> 2.```terser-webpack-plugin```  实测成功
+> 
+> ```json
+> const TerserPlugin = require('terser-webpack-plugin');
+> module.exports = {
+>     configureWebpack: config => {
+>         config
+>             .optimization = {
+>             minimizer: [
+>                 new TerserPlugin({
+>                     terserOptions: {
+>                         compress: {
+>                             drop_console: true
+>                         }
+>                     }
+>                 })
+>             ]
+>         }
+>     }
+> }
+> ```
+> 
+> 
+> 
+> 3.```babel-plugin-transform-remove-console```
+
+
