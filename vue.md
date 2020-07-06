@@ -148,8 +148,10 @@ var ComponentB = {
 > }
 > ```
 > 
-> 
-> 
 > 3.```babel-plugin-transform-remove-console```
+
+### 禁用 缩放,在`public`-`index.html`中添加相关属性
+
+`initial-scale=1.0,user-scalable=no,maximum-scale=1.0`
 
 
