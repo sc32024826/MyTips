@@ -4,6 +4,8 @@
 
 2. 使用命令行生成:`vue create "appName"`
 
+3. 当使用`git bash` 执行`vue create`命令时,`windows`下会遇到无法使用箭头选择选项,此时可以使用 `winpty vue.cmd` 代替`vue`,这种操作单次有效,或者在`git/etc/bash.bashrc`文件最后 添加 `alias vue='winpty vue.cmd'`永久有效
+
 ### 运行vue项目
 
 `npm run serve`
@@ -154,4 +156,4 @@ var ComponentB = {
 
 `initial-scale=1.0,user-scalable=no,maximum-scale=1.0`
 
-
+### 路由分 history 和 哈希模式两种,其中 哈希模式下  url中会有#字符,history模式  需要后端支持
