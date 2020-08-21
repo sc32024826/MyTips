@@ -86,4 +86,16 @@ fd1/*
 `git reset --hard`
 `git pull ogrin    master`
 
+### 多个remote 同步push
+
+在仓库中显示隐藏文件 `.git`,其中有个`config`文件 打开 添加
+
+```[remote "all"]
+[remote "all"]
+	url = git@github.com:sc32024826/uniapp.git
+	url = ssh://git@gitlab.servers.mchains.cn:30234/ShanYing.uniapp.git
+```
+
+`push`的时候 `git push all master`
+
 
